@@ -18,4 +18,23 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const aUser = Number.parseInt(prompt("Введите первое число"));
+const bUser = Number.parseInt(prompt("Введите второе число"));
+
+function sum(a, b) {
+    return a + b;
+}
+
+function dif(a, b) {
+    return Math.abs(a-b);
+}
+
+function mul(a, b) {
+    return a * b;
+}
+
+function div(a, b) {
+    return a / b;
+}
+
+console.log(dif(aUser, bUser));

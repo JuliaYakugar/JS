@@ -10,4 +10,12 @@
 три числа. Проверять их не нужно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const aUser = Number.parseInt(prompt("Введите первое число"));
+const bUser = Number.parseInt(prompt("Введите второе число"));
+const cUser = Number.parseInt(prompt("Введите третье число"));
+
+function maxNum (a, b, c) {
+    console.log(`Максимальное значение среди чисел ${a}, ${b}, ${c} равно ${Math.max(a, b, c)}.`);
+}
+
+maxNum(aUser, bUser, cUser);
