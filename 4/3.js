@@ -14,4 +14,13 @@
 не окажется, значит нужно будет вывести пустой массив.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const mas = [];
+
+for (let i = 0; i < 5; i++) {
+    mas.push(Math.floor(Math.random() * 10));
+}
+
+console.log(mas);
+console.log(`Сумму элементов массива ${mas.reduce((acc, el) => acc + el, 0)}`);
+console.log(`Минимальное значение в массиве ${mas.reduce((acc, el) => (acc < el) ? acc : el)}`);
+console.log(mas.reduce((acc, el, i) => ((el == 3) && acc.push(i), acc), []));
