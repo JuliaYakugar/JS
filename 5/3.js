@@ -23,4 +23,8 @@ const products = [
   },
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+products.forEach(el => {
+  el.price *= 0.85;
+});
+
+console.log(products);

@@ -9,7 +9,7 @@
 Если сложно работать с методами массива, то можно сделать и обычным циклом.
 */
 
-const products = [
+const pr = [    // переименовала, т.к. "use strict" ругался что такой массив уже объявлен const в 3 задании
   {
     id: 3,
     price: 127,
@@ -31,4 +31,6 @@ const products = [
   },
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+console.log(pr.filter(el => ((el.photos) && (el.photos.length > 0))));
+
+console.log(pr.sort(function(a, b) { return a.price - b.price; }));
